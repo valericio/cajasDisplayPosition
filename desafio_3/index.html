@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+    <style media="screen" type="text/css">
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+    .box{
+        border: 1px solid #000000;
+        height: 300px;
+        width: 40%;
+        margin: 40px;
+        display: inline-block;
+    }
+
+    .espana{
+        position: relative;
+    }
+    /*
+    Colores de la bandera
+    https://www.outono.net/elentir/2020/08/05/asi-son-los-colores-exactos-y-el-patron-de-diseno-de-la-bandera-y-el-escudo-de-espana/
+    
+    Rojo 1/4
+    Amarillo 1/2
+    Rojo 1/4
+
+    */
+    .espana__red{
+       background-color: #AD1519;
+       height: 300px;
+       width: 100%;
+       z-index: -1;
+       position: absolute; 
+    }
+
+    .espana__yellow{
+        background-color: #FABD00;
+        position: absolute;
+        height: 150px;
+        width: 100%;
+        top: 75px;   
+    }
+    p{
+        padding-top: 300px;
+    }
+
+    .dinamarca{
+        position: relative;
+    }
+    /*
+    Colores https://es.wikipedia.org/wiki/Archivo:Flag_of_Denmark.svg
+    
+    */
+
+    .dinamarca__red{
+        background-color: rgb(198, 12,48);
+        height: 300px;
+        width: 100%;
+        z-index: -1;
+        position: absolute; 
+    }
+
+    .dinamarca__white__vertical{
+        background-color: rgb(255, 255,255);
+        height: 300px;
+        width: 40px;
+        z-index: 1;
+        position: absolute;
+        left: 160px;
+    }
+
+    .dinamarca__white__horizontal{
+        background-color: rgb(255, 255,255);
+        position: absolute;
+        height: 40px;
+        width: 100%;
+        top: 130px;
+    }
+
+    .emiratos{
+        position: relative;
+    }
+
+    .emiratos__red{
+        background-color: red;
+        height: 300px;
+        width: 100%;
+        z-index: -1;
+        position: absolute; 
+    }  
+    
+    .emiratos__green{
+        background-color: green;
+        position: absolute;
+        height: 99px;
+        width: 70%;
+        left: 30%;
+    }
+
+    .emiratos__white{
+        background-color: white;
+        position: absolute;
+        height: 99px;
+        width: 70%;
+        left:30%;
+        top: 100px;
+      }
+    .emiratos__black{
+        background-color: black;
+        position: absolute;
+        height: 99px;
+        width: 70%;
+        left:30%;
+        top: 200px;
+    }
+    
+    .japon{
+        position: relative;
+    }
+
+    .japon__red{
+        background-color: red;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        left: 40%;
+        top: 90px; 
+    }
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            
+            <div class="box">
+                <div class="espana">
+                    <div class="espana__red"></div>
+                    <div class="espana__yellow"></div>
+                </div>
+                <p>España</p>
+            </div>
+            
+            <div class="box">
+                <div class="dinamarca">
+                    <div class="dinamarca__red"></div>
+                    <div class="dinamarca__white__horizontal"></div>
+                    <div class="dinamarca__white__vertical"></div>
+                </div>
+                <p>Dinamarca</p>    
+            </div>
+            
+            <div class="box">
+                <div class="emiratos">
+                    <div class="emiratos__red"></div>
+                    <div class="emiratos__green"></div>
+                    <div class="emiratos__white"></div>
+                    <div class="emiratos__black"></div>
+                    <p>Emiratos Árabes Unidos</p>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="japon">
+                    <div class="japon__red"></div>
+                </div>
+                <p>Japón</p>
+            </div>
+
+        </div>
+    </section>
+    
+</body>
+</html>
